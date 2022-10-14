@@ -4,10 +4,10 @@
     heap-size: 100
 
 ---
-spring:
-  config:
-    activate:
-      on-profile: default
+# spring:
+#   config:
+#     activate:
+#       on-profile: default
 eureka:
   instance:
     # enable to register multiple app instances with a random server port
