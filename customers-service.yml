@@ -16,5 +16,7 @@ server:
   port: 8081
 eureka:
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://petclinic-discovery-server:8761/eureka/
