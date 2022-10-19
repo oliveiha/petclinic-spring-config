@@ -24,10 +24,7 @@ spring:
   config:
     activate:
       on-profile: docker
-  opentracing:
-  jaeger:
-    http-sender:
-      url: http://otel-collector-core-jaeger.opentelemetry.svc.cluster.local:14268/api/traces
+  opentracing.jaeger.http-sender.url: http://otel-collector-core-jaeger.opentelemetry.svc.cluster.local:14268/api/traces
 eureka:
   client:
     serviceUrl:
