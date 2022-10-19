@@ -22,8 +22,10 @@ spring:
   config:
     activate:
       on-profile: docker
-  # zipkin:
-  #   baseUrl: http://tracing-server:9411
+  opentracing:
+  jaeger:
+    http-sender:
+      url: http://otel-collector-core-jaeger.opentelemetry.svc.cluster.local:14268/api/traces
 eureka:
   client:
     serviceUrl:
