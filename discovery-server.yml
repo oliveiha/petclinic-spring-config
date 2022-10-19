@@ -1,6 +1,11 @@
 ﻿server:
   port: 8761
 
+spring:
+  config:
+    activate:
+      on-profile: docker
+
 eureka:
   instance:
     hostname: petclinic-discovery-server
