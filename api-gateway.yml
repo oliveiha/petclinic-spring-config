@@ -19,6 +19,7 @@ spring.messages.basename: messages/messages
 
 ---
 spring:
+  spring.main.allow-bean-definition-overriding: true
   config:
     activate:
       on-profile: docker
